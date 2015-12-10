@@ -1,6 +1,6 @@
-group 'web-admin'
+group node['awesome_customers']['group']
 
-user 'web-admin' do
+user ['awesome_customer']['user'] do
 	group 'web-admin'
 	system true
 	shell 'bin/bash'
